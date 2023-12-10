@@ -1,32 +1,32 @@
-
-
 plugins {
     id ("com.android.application")
     id ("org.jetbrains.kotlin.android")
 }
 
+// 包名
+val packageName = ""
+
+// 库版本，目前 5.0 支持的库版本为 3 到 4
+val extensionLibVersion = 4
+
 android {
-    namespace = "com.heyanle.easybangumi_extension.xxx"
-    compileSdk = 33
+    namespace = packageName
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.heyanle.easybangumi_extension.xxx"
+        applicationId = packageName
         minSdk =  21
-        targetSdk =  33
+        targetSdk =  34
         versionCode = 1
         versionName = "1.0"
+
+        manifestPlaceholders.put("extensionLibVersion", 4)
 
     }
 
     buildTypes {
         release {
-            postprocessing {
-                isRemoveUnusedCode = false
-                isRemoveUnusedResources = false
-                isObfuscate = false
-                isOptimizeCode = false
-                proguardFiles("proguard-rules.pro")
-            }
+            isMinifyEnabled = false
         }
     }
     compileOptions {
@@ -45,5 +45,5 @@ android {
 
 
 dependencies {
-    compileOnly("io.github.easybangumiorg:extension-api:1.0-SNAPSHOT")
+    compileOnly("io.github.easybangumiorg:extension-api:1.${extensionLibVersion}-SNAPSHOT")
 }

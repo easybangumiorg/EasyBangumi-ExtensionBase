@@ -10,16 +10,11 @@
         android:label="[APP 名称]"
         android:supportsRtl="true">
 
-        <!--readme-->
-        <meta-data
-            android:name="easybangumi.extension.readme"
-            android:value="[扩展描述]" />
-
 
         <!--libVersion-->
         <meta-data
             android:name="easybangumi.extension.lib.version"
-            android:value="1" />
+            android:value="${extensionLibVersion}" />
 
         <!--source-->
         <meta-data

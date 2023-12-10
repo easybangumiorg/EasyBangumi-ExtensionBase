@@ -1,8 +1,8 @@
 package com.heyanle.easybangumi_extension
 
-import com.heyanle.bangumi_source_api.api.Source
-import com.heyanle.bangumi_source_api.api.SourceFactory
-import com.heyanle.easybangumi_extension.yhdm.YhdmSource
+import com.heyanle.easybangumi4.source_api.Source
+import com.heyanle.easybangumi4.source_api.SourceFactory
+
 
 /**
  * Created by HeYanLe on 2023/2/19 23:23.
