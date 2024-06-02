@@ -7,7 +7,7 @@ plugins {
 val packageName = ""
 
 // 库版本，目前 5.0.3 支持的库版本为 3 到 5
-val extensionLibVersion = 5
+val extensionLibVersion = 9
 
 android {
     namespace = packageName
@@ -46,4 +46,5 @@ android {
 
 dependencies {
     compileOnly("io.github.easybangumiorg:extension-api:1.${extensionLibVersion}-SNAPSHOT")
+    implementation("io.github.easybangumiorg:extension-core:1.${extensionLibVersion}-SNAPSHOT")
 }
